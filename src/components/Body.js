@@ -1,9 +1,12 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import resList from "../utils/mockData";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
 let [ListOfRestaurants, setListOfRestaurant] = useState([]);
+let [filteredRestaurant, setFilteredRestaurant] = useState([]);
+const [searchText, setSearchText] = useState("");
 
 useEffect(()=> {
   fetchData();
@@ -11,65 +14,74 @@ useEffect(()=> {
 
 const fetchData = async () => {
   const data = await fetch(
-    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.550855&lng=73.937188&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING#"
+    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.550855&lng=73.937188&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
   );
- const json = await data.json();
- const restaurants =
-      json?.data?.cards
-        ?.map((card) => card?.card?.card)
-        ?.find((c) => c?.restaurants)?.restaurants;
-      setListOfRestaurant(restaurants || []);
-  };
-    // {
-    //  info: {
-    //   id: "24414",
-    //   name: "Domino's Pizza",
-    //   cloudinaryImageId:
-    //   "2025/11/11/035cf402-986f-49b6-9e29-6f75237586c0_24414.JPG", 
-    //   costForTwo: "₹400 for two",
-    //   cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
-    //   avgRatingString: "4.3",
-    //   deliveryTime: 25,
-    //   },
-    // },
-    // {
-    //  info: {
-    //   id: "24415",
-    //   name: "kfc",
-    //   cloudinaryImageId:
-    //   "2025/11/11/035cf402-986f-49b6-9e29-6f75237586c0_24414.JPG", 
-    //   costForTwo: "₹400 for two",
-    //   cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
-    //   avgRatingString: "4.4",
-    //   deliveryTime: 25,
-    //   },
-    // },
- 
-  return (
+
+  const json = await data.json();
+  // Optional Chaining
+ const restaurants = json?.data?.cards?.find(
+    (card) =>
+      card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+  setListOfRestaurant(restaurants || []);
+  setFilteredRestaurant(restaurants || []);
+
+};
+  // Conditional Rendering
+ return ListOfRestaurants.length === 0 ? (
+   <Shimmer />
+ ) : (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input type="text" 
+          className="search-box"
+          value={searchText}
+          onChange={(e)=> {
+            setSearchText(e.target.value);
+          }}
+          />
+          <button 
+           onClick={() => {
+                //  Filter the restaurant cards and update the UI
+              //  searchText
+              console.log(searchText);
+              const filteredRestaurant = ListOfRestaurants.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilteredRestaurant(filteredRestaurant);
+           }}>Search</button>
+
+      </div>
       <button 
          className="filter-btn" 
           onClick={() => {
             const filteredList = ListOfRestaurants.filter(
               (res) => parseFloat(res.info.avgRatingString) > 4.5
             );
-            setListOfRestaurant(filteredList);
+            setFilteredRestaurant(filteredList);
           }}
       >
         Top Rated Restaurants
         </button>
+        
         </div>
-      <div className="res-container">
-      {ListOfRestaurants.map((restaurants) => (        
-          <RestaurantCard 
-          key={restaurants.info.id} 
-          resData={restaurants} />
-        ))}
-      </div>
-    </div>
+<div className="res-container">
+  {Array.isArray(filteredRestaurant) &&
+    filteredRestaurant.map((restaurant) => {
+     console.log(restaurant.info.cloudinaryImageId);
+  return (
+    <RestaurantCard
+      key={restaurant.info.id}
+      resData={restaurant}
+      />
   );
-};
+})}
+</div>
+    </div>
+  )
+}
 export default Body;
 
 /* {resList.restaurants.map((restaurants) => ( */

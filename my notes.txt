@@ -1,0 +1,6 @@
+
+episde 6 : 
+const[btnNameReact, setBtnNameReact]=useState("Logout")
+Here useState is giving us this "btnNameReact" name variable 
+but this "setBtnNameReact" -the 2nd parameter will 
+give you a function to update the variable.
