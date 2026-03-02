@@ -4,3 +4,28 @@ const[btnNameReact, setBtnNameReact]=useState("Logout")
 Here useState is giving us this "btnNameReact" name variable 
 but this "setBtnNameReact" -the 2nd parameter will 
 give you a function to update the variable.
+
+topics taught:
+Monolith & Microservice Architecture , CORS chrome ext. , usestate, useeffect, shimmer , login/logout button , search bar , search filter 
+filter : top rated res, one word search irrespective of upper/loweercase 
+
+topics to learn from JS :
+Async, Await , Promises , onClick event handler 
+-------
+
+episode 7:
+
+topics taught:
+Routing , dive deep into hooks ,
+useEffect(()=>{callbk fn}, [dependency array]);
+/if there is no dependecy array useEffect is called on every render
+/if there is empty dependecy array useEffect is called on only initial render
+
+always create useState variable insde the component 
+it is used too create specific purpose inside your local state component
+never create your state variable inside the if else..., for loop , or any function 
+instead always keep it at the
+top of your component - it will create inconsistency
+this is the best practice
+
+*
