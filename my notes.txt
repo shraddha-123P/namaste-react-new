@@ -28,4 +28,6 @@ instead always keep it at the
 top of your component - it will create inconsistency
 this is the best practice
 
-*
+*Routing, Create browser Router , Router Provider , 
+Error on Error page, Error Element , Hook - useRouter
+ outlet , link (in Single page application react will not reload your website)

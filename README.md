@@ -28,3 +28,7 @@ import {Component} from "path";
 (Normal JS utility functions)
 -useState()- used to generate Superpowerful state variable in react
 -useEffect() - # namaste-react-new
+
+#2 types of routing in web apps
+-Client side routing
+-server side routing
