@@ -18,7 +18,7 @@ episode 7:
 topics taught:
 Routing , dive deep into hooks ,
 useEffect(()=>{callbk fn}, [dependency array]);
-/if there is no dependecy array useEffect is called on every render
+/if there is no dependecy array useEffect is called on every render.
 /if there is empty dependecy array useEffect is called on only initial render
 
 always create useState variable insde the component 
@@ -31,3 +31,5 @@ this is the best practice
 *Routing, Create browser Router , Router Provider , 
 Error on Error page, Error Element , Hook - useRouter
  outlet , link (in Single page application react will not reload your website)
+
+*Dynamic Routing
