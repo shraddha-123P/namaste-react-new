@@ -14,7 +14,18 @@ Async, Await , Promises , onClick event handler
 -------
 
 episode 7:
+Routing configration - CBR 
+this will prvide the routiing configuration to our app  -Router Provider--(@25:26min)
+useRouter error - hook by rrd (@38.20min)
 
+Childern routing - header will stay still(@44:15)
+outlet is like a tunnel - all the children go inside it and then come out.
+ insead of the outlet
+if u go to about us page outlet will be replace by about us , header will stay still.
+</header>
+</outlet> 
+<a> never use anchor tag<a> as it reloads the hole page 
+use <Link> tag for routing in reat it does not reload entire page - we get link tag from RRD @56.50
 topics taught:
 Routing , dive deep into hooks ,
 useEffect(()=>{callbk fn}, [dependency array]);

@@ -1,11 +1,7 @@
 import { CDN_URL } from "../utils/constants";
-import { Link } from "react-router-dom";
-<Link to={"/restaurants/" + resData.info.id}>
-  <RestaurantCard resData={restaurant} />
-</Link>
-const RestaurantCard = (props) => {
-  const { resData } = props;
 
+
+const RestaurantCard = ({resData}) => {
   const {
     cloudinaryImageId,
     name,

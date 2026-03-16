@@ -1,9 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
-import resList from "../utils/mockData";
+// import resList from "../utils/mockData";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
+
 let [ListOfRestaurants, setListOfRestaurant] = useState([]);
 let [filteredRestaurant, setFilteredRestaurant] = useState([]);
 const [searchText, setSearchText] = useState("");
@@ -29,9 +31,10 @@ const fetchData = async () => {
 
 };
   // Conditional Rendering
- return ListOfRestaurants.length === 0 ? (
-   <Shimmer />
- ) : (
+  if(ListOfRestaurants.length === 0) {
+ return<Shimmer />;
+   }
+   return (
     <div className="body">
       <div className="filter">
         <div className="search">
@@ -48,11 +51,15 @@ const fetchData = async () => {
               //  searchText
               console.log(searchText);
               const filteredRestaurant = ListOfRestaurants.filter((res) =>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                res.info.name
+              .toLowerCase()
+              .includes(searchText.toLowerCase())
               );
               setFilteredRestaurant(filteredRestaurant);
-           }}>Search</button>
-
+           }}
+           >
+            Search
+            </button>
       </div>
       <button 
          className="filter-btn" 
@@ -68,8 +75,16 @@ const fetchData = async () => {
         
         </div>
 <div className="res-container">
-  {Array.isArray(filteredRestaurant) &&
-    filteredRestaurant.map((restaurant) => {
+  {filteredRestaurant.map((restaurant)  => (
+<Link 
+  key={restaurant.info.id}
+  to={"/restaurants/" + restaurant.info.id}>
+  <RestaurantCard resData={restaurant} />
+</Link>
+  ))}
+  </div>
+  {/* {Array.isArray(filteredRestaurant) &&
+     {
      console.log(restaurant.info.cloudinaryImageId);
   return (
     <RestaurantCard
@@ -77,11 +92,11 @@ const fetchData = async () => {
       resData={restaurant}
       />
   );
-})}
-</div>
+})}  */}
+
     </div>
-  )
-}
+  );
+};
 export default Body;
 
 /* {resList.restaurants.map((restaurants) => ( */
