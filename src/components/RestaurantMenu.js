@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 const RestaurantMenu = () => {
 
-  const [resInfo, setResInfo] = useState(null);
+  // const [resInfo, setResInfo] = useState(null);
 
   useEffect(() => {
     fetchMenu();
@@ -10,15 +10,14 @@ const RestaurantMenu = () => {
 
   const fetchMenu = async () => {
     const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.550855&lng=73.937188&restaurantId=24414&submitAction=ENTER"
+      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.550855&lng=73.937188&restaurantId=24414&submitAction=ENTER"
     );
-
     const json = await data.json();
     console.log(json);
     setResInfo(json.data);
   };
 
-  if (resInfo === null) return <h1>Loading...</h1>;
+  // if (resInfo === null) return <h1>Loading...</h1>;
 
   return (
     <div className="menu">
