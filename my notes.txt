@@ -44,3 +44,8 @@ Error on Error page, Error Element , Hook - useRouter
  outlet , link (in Single page application react will not reload your website)
 
 *Dynamic Routing
+
+-------
+
+episode 8:
+
