@@ -48,4 +48,4 @@ Error on Error page, Error Element , Hook - useRouter
 -------
 
 episode 8:
-
+life cycle of API component
