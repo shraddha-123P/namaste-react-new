@@ -49,3 +49,11 @@ Error on Error page, Error Element , Hook - useRouter
 
 episode 8:
 life cycle of API component
+-------
+
+episode 9:
+Custom Hook
+Single responsibility function : your code becomes more  
+REusable , maintainable ,testable 
+
+What are Hooks? They are nothing but normal helper functions
