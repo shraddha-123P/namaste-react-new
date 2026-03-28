@@ -2,8 +2,9 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
+  // local state variable - super powerful variable
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -23,13 +24,22 @@ const Body = () => {
       (card) =>
         card?.card?.card?.gridElements?.infoWithStyle?.restaurants
     )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-
+// optional chaining
     setListOfRestaurant(restaurants || []);
     setFilteredRestaurant(restaurants || []);
   };
 
-  if (listOfRestaurants.length === 0) return <Shimmer />;
+const onlineStatus = useOnlineStatus();
+if (onlineStatus === false)
+  return (
+<h1>
+   Looks like you are offline!
+</h1>
+);
 
+
+if (listOfRestaurants.length === 0)   
+    return <Shimmer />;
   return (
     <div className="body">
       <div className="filter">

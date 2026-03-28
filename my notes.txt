@@ -47,7 +47,7 @@ Error on Error page, Error Element , Hook - useRouter
 
 -------
 
-episode 8:
+episode 8: Lets get classy - Ommited
 life cycle of API component
 -------
 
@@ -57,3 +57,15 @@ Single responsibility function : your code becomes more
 REusable , maintainable ,testable 
 
 What are Hooks? They are nothing but normal helper functions
+Part 2: Create cutom hook create fething data logic in that custom hook 
+
+Part 3: A Hook for Online - Offline feature
+can be used in chat apps 
+How to create a custom hook?
+Finalize the contract of hook
+What should be the input and what should be a output
+
+Part 4: is it mandetory to use the word "use" while making custome hook?
+
+Part 5:
+Bundler reveson @ 1:00:00...
