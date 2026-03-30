@@ -69,3 +69,4 @@ Part 4: is it mandetory to use the word "use" while making custome hook?
 
 Part 5:
 Bundler reveson @ 1:00:00...
+Lazy Loading @1:17:20
