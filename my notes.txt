@@ -82,3 +82,29 @@ Read About 1)SCSS ,
 
 Part 2:
 5)Tailwind CSS:
+postcssrc @20:45
+Step-by-step process to intall tailwind in app:
+1.open website tilwindcss.com - go to "Framework Guides" & select parcel. 
+
+2.copy & paste "Install Tailwind CSS" & run in terminal 
+then run "npx tailwindcss init" this will create a "tailwind.config.js" file
+now we've got confgiguration for tailwiind 
+
+3.now your parcel is used to understand tailiwind 
+postcss is used to understand tailiwind 
+create a new file in root sec .postcssrc as commanded from website 
+copy & past somecode like 
+{
+  "plugins": {
+    "@tailwindcss/postcss": {}
+  }
+}
+now we've got confgiguration for postcss
+
+4. now write this file "content: ["./src/**/*.{html,js,ts,jsx,tsx}"],"
+
+5 import tailwinf to index.css file 
+copy paste from websote what to write in .css file
+
+
+Part 3: Now the css is completely broken and I have to made a good css ith tailwind

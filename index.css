@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@
     padding: 2px;
     width: 200px;
     /* height: 350px; */
-}
+/* }
 .res-card h3 {
   margin: 6px 0;
 }
@@ -87,4 +87,6 @@
 .user-card{
     padding: 10px;
     border: black solid;
-}
+} */ 
+
+@import "tailwindcss";
