@@ -10,13 +10,13 @@ const Header = () => {
 
   // console.log("Header render");
   return (
-    <div className="header">
+    <div className= "bg-amber-50"  >
       <div className="logo-container">       
         <img className="w-56" src={LOGO_URL} />
       </div>
     <div className="flex items-center">
-        <ul className="">
-          <li>
+        <ul className="flex p-4 m-4">
+          <li className="px-4">
           Online Status:{onlineStatus ? "✅":"🔴"}
           </li>
           <li>

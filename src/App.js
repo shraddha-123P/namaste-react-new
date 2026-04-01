@@ -8,7 +8,7 @@ import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider , Outlet} from "react-router-dom";
 // import RestaurantCard from "./components/RestaurantCard";
 import  RestaurantMenu  from "./components/RestaurantMenu";
-
+import "../index.css";
 // on demand loading 
 // chunking / Code spliting / lazy loading / on demand loading / dynamic import
 
