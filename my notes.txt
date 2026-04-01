@@ -68,5 +68,17 @@ What should be the input and what should be a output
 Part 4: is it mandetory to use the word "use" while making custome hook?
 
 Part 5:
+Part 1:
 Bundler reveson @ 1:00:00...
 Lazy Loading @1:17:20
+Suspense @1:25:00
+-------
+
+episode 10:
+Read About 1)SCSS , 
+2)Sass , 
+3)Styled Components , 
+4)Material UI , ANT design , Bootstrap - these are CSS libraries and frameworks
+
+Part 2:
+5)Tailwind CSS:
