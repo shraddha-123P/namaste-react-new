@@ -108,3 +108,9 @@ copy paste from websote what to write in .css file
 
 
 Part 3: Now the css is completely broken and I have to made a good css ith tailwind
+-------
+
+episode 10:
+-Higher Order Components: are used to enhance the UI not to modify the components
+
+Part 2: Controlled and Uncontrolled Components
