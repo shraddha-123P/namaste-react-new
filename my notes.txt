@@ -113,4 +113,11 @@ Part 3: Now the css is completely broken and I have to made a good css ith tailw
 episode 10:
 -Higher Order Components: are used to enhance the UI not to modify the components
 
-Part 2: Controlled and Uncontrolled Components
+Part 2: Controlled and Uncontrolled Components:
+Lifting the state up
+@1:35 React dev tool very helpful in debugging
+
+Part 4: @2:08.08 Prop drilling
+Our data is present somewhere and we want to access it somewhee else 
+@2:17 loged in user info
+@2:20 user context
