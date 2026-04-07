@@ -68,7 +68,7 @@ What should be the input and what should be a output
 Part 4: is it mandetory to use the word "use" while making custome hook?
 
 Part 5:
-Part 1:
+Part 6:
 Bundler reveson @ 1:00:00...
 Lazy Loading @1:17:20
 Suspense @1:25:00
@@ -110,7 +110,7 @@ copy paste from websote what to write in .css file
 Part 3: Now the css is completely broken and I have to made a good css ith tailwind
 -------
 
-episode 10:
+episode 11:
 -Higher Order Components: are used to enhance the UI not to modify the components
 
 Part 2: Controlled and Uncontrolled Components:
@@ -121,3 +121,19 @@ Part 4: @2:08.08 Prop drilling
 Our data is present somewhere and we want to access it somewhee else 
 @2:17 loged in user info
 @2:20 user context
+@3:30 what is diff betwn redux and react contex?
+redux is a state management library it comes from outside the box
+When we use redux we dont need react context 
+-------
+
+episode 12:
+Part 1: @01:20 Redux is not a mandetory thing
+Redux n react are not the same thing ,we install different library 
+for redux for state managemant 
+Redux helps our application easier to debug same as some react dev tools 
+
+same as reduct there is a popular library cleed "Zustand
+
+Part 2: why redux was complicated 
+Part 3: redux architecture diagram
+Part 4:
