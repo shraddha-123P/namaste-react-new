@@ -46,14 +46,13 @@ if (listOfRestaurants.length === 0)
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
-            type="text"
-            className="border border-solid border-black"
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-          />
-
+  type="text"
+  className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+  value={searchText}
+  onChange={(e) => setSearchText(e.target.value)}
+/>
           <button
-            className="px-4 py-2  bg-green-100 m-4 rounded-lg"
+            className="px-4 py-2 bg-green-100 mx-4 rounded-lg"
             onClick={() => {
               const filtered = listOfRestaurants.filter((res) =>
                 res.info.name
@@ -67,16 +66,19 @@ if (listOfRestaurants.length === 0)
           </button>
         </div>
 
-        <button
-          className="px-4 py-2 bg-gray-100 rounded-lg"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => parseFloat(res.info.avgRatingString) > 4.5
-            );
-            setFilteredRestaurant(filteredList);
-          }}>
-          Top Rated Restaurants
-        </button>
+<button
+ className="px-4 py-2 bg-green-100 mx-4 rounded-lg"
+  // className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md 
+  // text-sm hover:bg-gray-300 transition"
+  onClick={() => {
+    const filteredList = listOfRestaurants.filter(
+      (res) => parseFloat(res.info.avgRatingString) > 4.5
+    );
+    setFilteredRestaurant(filteredList);
+  }}
+>
+  ⭐ Top Rated Restaurants
+</button>
       </div>
 
       <div className="flex flex-wrap">

@@ -5,48 +5,50 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
-
   const onlineStatus = useOnlineStatus();
 
-  // console.log("Header render");
   return (
-    <div className= "bg-amber-50"  >
-      <div className="logo-container">       
-        <img className="w-56" src={LOGO_URL} />
-      </div>
-    <div className="flex items-center">
-        <ul className="flex p-4 m-4">
-          <li className="px-4">
-          Online Status:{onlineStatus ? "✅":"🔴"}
-          </li>
-          <li>
-            <Link to ="/">Home</Link>
-          </li>
-          <li>
-            <Link to ="/about">About</Link>
-          </li>
-          <li>
-            <Link to ="/contact">Contact</Link>
-          </li>
-           <li>
-            <Link to ="/grocery">Grocery</Link>
-          </li>
-          <li>
-            <Link to ="/cart">Cart</Link>  
-          </li>
-        
-          <button
-            className="login"
-            onClick={() =>{
-              btnNameReact === "Login"
-              ? setBtnNameReact("Logout")
-              : setBtnNameReact("Login");
-            }} >
-              {btnNameReact}
-            </button>
-        </ul>
-      </div>
-    </div>
+    
+    <div className="bg-amber-50 shadow-sm">
+  <div className="flex justify-between items-center px-8 py-2">
+    
+    {/* Logo */}
+    <img className="w-28" src={LOGO_URL} alt="logo" />
+
+    {/* Nav */}
+    <ul className="flex items-center gap-8 text-base font-semibold">
+      
+      <li>
+        Online Status: {onlineStatus ? "✅" : "🔴"}
+      </li>
+
+      <li className="hover:text-orange-500">
+        <Link to="/">Home</Link>
+      </li>
+
+      <li className="hover:text-orange-500">
+        <Link to="/about">About</Link>
+      </li>
+
+      <li className="hover:text-orange-500">
+        <Link to="/contact">Contact</Link>
+      </li>
+
+      <li className="hover:text-orange-500">
+        <Link to="/grocery">Grocery</Link>
+      </li>
+
+      <li className="hover:text-orange-500">
+        <Link to="/cart">Cart</Link>
+      </li>
+
+      <button className="bg-orange-400 text-white px-4 py-1 rounded-md hover:bg-orange-500">
+        {btnNameReact}
+      </button>
+
+    </ul>
+  </div>
+</div>
   );
 };
 export default Header;
