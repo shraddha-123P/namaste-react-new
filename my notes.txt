@@ -137,3 +137,17 @@ same as reduct there is a popular library cleed "Zustand
 Part 2: why redux was complicated 
 Part 3: redux architecture diagram
 Part 4:
+cartclice code nicely explained 1:04:03
+appstore.js coding explained 1:10:15
+Using selector to subscribe to our store 1:13 - look in header.js
+
+how to dispatch action on clicking add button itemlist 1:21:02 itemlist = restaurantMenu
+Part 5: 1:50
+whenever u r using selector make sure u r subscribing to the right portion of the store
+why is it called selector? because yyou are selection one specific portion 
+of the store
+part 6: 1:55
+usage of multiple reducers vs why we export single reducer explained in
+@1.57,in slice
+
+Part 7: @1:58:49

@@ -6,20 +6,23 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider , Outlet} from "react-router-dom";
-// import RestaurantCard from "./components/RestaurantCard";
+import RestaurantCard from "./components/RestaurantCard";
 import  RestaurantMenu  from "./components/RestaurantMenu";
 import "../index.css";
 // on demand loading 
 // chunking / Code spliting / lazy loading / on demand loading / dynamic import
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 const Grocery = lazy(()=> import("./components/Grocery"));
 const AppLayout = () => {
   return (
+    <Provider store={appStore}>
     <div className="app">
-      <h1>Food Villa</h1>
       <Header/>
       <Outlet />
     </div>
+    </Provider>
   );
 };
 
