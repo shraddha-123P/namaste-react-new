@@ -103,9 +103,8 @@ now we've got confgiguration for postcss
 
 4. now write this file "content: ["./src/**/*.{html,js,ts,jsx,tsx}"],"
 
-5 import tailwinf to index.css file 
-copy paste from websote what to write in .css file
-
+5 import tailwind to index.css file 
+copy paste from website what to write in .css file
 
 Part 3: Now the css is completely broken and I have to made a good css ith tailwind
 -------
@@ -121,7 +120,7 @@ Part 4: @2:08.08 Prop drilling
 Our data is present somewhere and we want to access it somewhee else 
 @2:17 loged in user info
 @2:20 user context
-@3:30 what is diff betwn redux and react contex?
+@3:30 what is diff betwn redux and react context?
 redux is a state management library it comes from outside the box
 When we use redux we dont need react context 
 -------
@@ -137,7 +136,7 @@ same as reduct there is a popular library cleed "Zustand
 Part 2: why redux was complicated 
 Part 3: redux architecture diagram
 Part 4:
-cartclice code nicely explained 1:04:03
+cartslice code nicely explained 1:04:03
 appstore.js coding explained 1:10:15
 Using selector to subscribe to our store 1:13 - look in header.js
 
