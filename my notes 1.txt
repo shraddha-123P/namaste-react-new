@@ -1,4 +1,67 @@
-
 episde 1 : 
+Part-01
+create basic html file for hellow world program
+create basic js file for hellow world program
+installation of CDN link form the website , inject them in html file
 
-installation of CDN link form the website
+Part-02 : @30:55
+we will just add h1 tag in div id=root
+
+<div id="root"></div>
+<script>
+const heading =
+React.createElement("h1", {id:"heading"}, "Hello world from React");
+const root =
+ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+
+[.createElement takes 3 arguments -
+1.h1 tag is the name of element , 
+2.empty obj - it is used to give attributes to the class,
+3."..."what are you going to keep in the obj
+now we need to tell react that we need to put this element 
+inside the div id="root"
+
+creacting an element is a job of react library i.e .createElement
+but
+creating a root and rendering it inside the div is a job of reactDOM]
+
+Part-03 : @40:50
+injected css file in this file we can use that id used in {}
+
+Part-04 : @53:37
+Created mind bogling nested structures inside react
+
+for ex if we need something like this:
+<div id="parent">
+ <div id="child">
+   <h1>i m h1 tag</h1>
+   <h2>i m h2 tag</h2>
+ </div>
+</div>
+
+then in react we do:
+
+const parent = React.createElement(
+"div",
+{id: "parent"},
+React.createElement("div", {id: "child"}, [
+React.createElement("h1", {}, "i am an h1 tag"),
+React.createElement("h2", {},  "i am an h1 tag"),
+])
+);
+console.log(parent);
+
+nested children who r siblings are to be added int an array[....,...] 
+now since this all looks even worse we wil use somethign called as jsx
+
+Part-05 : @01:08:06
+
+
+
+
+
+
+
+
+ 
