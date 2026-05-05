@@ -56,11 +56,23 @@ nested children who r siblings are to be added int an array[....,...]
 now since this all looks even worse we wil use somethign called as jsx
 
 Part-05 : @01:08:06
+--------------------
+episde 2 : 
+Part-01
+git and github commit , push etc,
+episde 1 : 
+Part-01
+what r bundlers - we are installing parcel as bundler
+parcel: 
+dev dep , version abt parcel , package lock .json
+how to install npm
+there r 2 tyes of dependencies that we install
+1-dev dependencies-used in development of an app 
+and
+2-normal dependencies - used in production also
+@55.02 gitignore
 
-
-
-
-
+Part-02 @1:05
 
 
 
