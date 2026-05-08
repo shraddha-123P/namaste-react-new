@@ -1,4 +1,4 @@
-episde 1 : 
+episode 1 : 
 Part-01
 create basic html file for hellow world program
 create basic js file for hellow world program
@@ -57,11 +57,10 @@ now since this all looks even worse we wil use somethign called as jsx
 
 Part-05 : @01:08:06
 --------------------
-episde 2 : 
+
+episode 2 : 
 Part-01
 git and github commit , push etc,
-episde 1 : 
-Part-01
 what r bundlers - we are installing parcel as bundler
 parcel: 
 dev dep , version abt parcel , package lock .json
@@ -73,7 +72,21 @@ and
 @55.02 gitignore
 
 Part-02 @1:05
+installation and everythhing about Parcel
+--------------------
 
+episde 3 :
+Part-01
+Project entry point
 
+Part-02
 
- 
+Part-03
+what si JSX? ITS SYNTAX
+Babel - it is a library
+JSX => Babel transpiles it to React.creatteElement => ReactElement-JS Object=> HTMLElement(render)
+instalaltion of extentions like 
+after using jsx we donot need
+Prettier , bracket collorisor , Better comment
+ Part-04 @1:54
+.

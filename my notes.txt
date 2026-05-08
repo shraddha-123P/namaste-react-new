@@ -1,5 +1,5 @@
 
-episde 6 : 
+episode 6 : 
 const[btnNameReact, setBtnNameReact]=useState("Logout")
 Here useState is giving us this "btnNameReact" name variable 
 but this "setBtnNameReact" -the 2nd parameter will 
