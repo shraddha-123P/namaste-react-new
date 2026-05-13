@@ -75,7 +75,7 @@ Part-02 @1:05
 installation and everythhing about Parcel
 --------------------
 
-episde 3 :
+episode 3 :
 Part-01
 Project entry point
 
@@ -88,5 +88,31 @@ JSX => Babel transpiles it to React.creatteElement => ReactElement-JS Object=> H
 instalaltion of extentions like 
 after using jsx we donot need
 Prettier , bracket collorisor , Better comment
- Part-04 @1:54
-.
+ Part-04 @1:04
+functional compo , class based components
+Component composition
+PArt-05 @1:26
+u can compose js in react tage anything inside anything
+site sidescripting
+--------------------
+
+episode 4 :
+Part-01
+made a layout - jotted down what all we need in our app
+made a AppLayout coponent
+css: @23:08
+Body @30:00
+inline styling - Styleobj in restaurantcard @40
+restaurantcard @50:10
+
+Part-02 @59:21
+how can we make different cards dynamic
+Props @1:00:10 "thye r simply arguments to the function" 
+like some properties thT WE CAN PASS TO THE COMPONENT
+IT TAKEs all the properties and wraps it inside an object
+
+Destructuring @1:05 
+const RestaurantCard = (props) =>{
+const { resName, Cuisine} = props;
+
+Configdriven UI @1:14
