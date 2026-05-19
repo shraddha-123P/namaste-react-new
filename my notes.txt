@@ -188,13 +188,22 @@ We will configure parcel config file to disable default babel transpilation
 
 Part3: @41:40 we are ready to write test cases
 @jest configuration
-npx jest --init
+npx create-jest
+Need to install the following packages:
+1.use typescript - n 
+2.choose jsdom @43:51
+3.coverage - yes 
+4.provider - babel 
+5.clear mock calls -yes 
+now check the newly automatic created "jest.config.js" file
 
+@jest DOM Library
+npm install --save-dev jest-environment-jsdom
+copy this command from react testing lib ->setup-> Jest 28
+@55:50 made a new __test__ folder , installed vscode icon extension
+example test case
 
-
-
-
-
+Part4: @1:10:05
 
 
 
