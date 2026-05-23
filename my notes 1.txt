@@ -1,3 +1,4 @@
+
 episode 1 : 
 Part-01
 create basic html file for hellow world program
@@ -115,4 +116,4 @@ Destructuring @1:05
 const RestaurantCard = (props) =>{
 const { resName, Cuisine} = props;
 
-Configdriven UI @1:14..
+Configdriven UI @1:14....
