@@ -116,5 +116,5 @@ Destructuring @1:05
 const RestaurantCard = (props) =>{
 const { resName, Cuisine} = props;
 
-Configdriven UI @1:14....
+Configdriven UI @1:14......
 in websites
