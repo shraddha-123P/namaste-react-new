@@ -203,7 +203,7 @@ copy this command from react testing lib ->setup-> Jest 28
 @55:50 made a new __test__ folder , installed vscode icon extension
 example test case
 
-Part4: @1:10:05
+Part4: @1:10:05..
 
 basic unit test cases
 unit testing means - you are testing one component in an isolated environment
